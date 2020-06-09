@@ -23,13 +23,4 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     htmlpage = a.sub_data()
     html = func.HttpResponse(htmlpage, mimetype='text/html')
     return html
-    #file = pathlib.Path(__file__).parent / 'State13.html'
-    #file = 'HttpExample/index.html'
 
-    '''
-    with open(file, 'rb') as f:
-        #mimetype = mimetypes.guess_type(file)
-        #html = func.HttpResponse(f.read(), mimetype=mimetype[0])
-        html = func.HttpResponse(f.read(), mimetype= 'text/html')
-        return html
-    '''
